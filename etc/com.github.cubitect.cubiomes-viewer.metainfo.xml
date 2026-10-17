@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+
+  <id>com.github.cubitect.cubiomes-viewer</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+
+  <developer_name>Cubitect</developer_name>
+  <name>Cubiomes Viewer</name>
+  <summary>Minecraft seed finder and map viewer</summary>
+  <description>
+    <p>Cubiomes Viewer offers highly customizable seed-finding utilities and a map viewer for the biome and structure generation of Minecraft Java Edition for the main releases up to 1.21.</p>
+  </description>
+
+  <releases>
+    <release version="5.0.0" date="2026-10-08">
+      <description>
+        <p>Changes:</p>
+        <ul>
+          <li>Added arm64 macOS binary</li>
+          <li>Updated underlying Cubiomes Library to support features beyond 1.21 WD/1.12.3 (see below)</li>
+          <li>Add Abandoned Camp Structure Support</li>
+          <li>Add 26.3 support</li>
+          <li>Add 26.2 support</li>
+          <li>Add 26.1 support</li>
+          <li>Add 1.21.11 support</li>
+          <li>Add 1.21.9 support</li>
+          <li>Add 1.21.6 support</li>
+          <li>Add 1.21.5 support</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.1.2" date="2024-11-10">
+      <description>
+        <p>Changes:</p>
+        <ul>
+          <li>Renamed 1.21.3 to 1.21 WD and 1.21.2 to 1.21.3 to match the Winter Drop</li>
+          <li>Fixed the World Spawn for 1.21.2+</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.1.0" date="2024-10-07">
+      <description>
+        <p>Changes:</p>
+        <ul>
+          <li>Added 1.21.2 to versions, as well as an experimental 1.21.3 for the Pale Garden biome</li>
+          <li>Added Trial Chambers</li>
+          <li>Added Climate Noise Sampling filter</li>
+          <li>added linked End Gateways</li>
+          <li>Fixed inaccurate End generation at large distances from 0,0</li>
+          <li>Fixed biome samples filter not working for older versions</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.0.1" date="2024-02-11">
+      <description>
+        <p>Changes:</p>
+        <ul>
+          <li>Fixed search progress not loading properly when stopped on a negative seed</li>
+          <li>Tweaked app icon and screenshots</li>
+          <li>Tweaked default layout</li>
+        </ul>
+      </description>
+    </release>
+    <release version="4.0.0" date="2024-02-01">
+      <description>
+        <p>This release adds a way to find locations in a given seed, as well as a biome sample filter that can check biome proportions.</p>
+        <p>All scaled coordinates have been changed to use block coordinates instead. Scaled biome filters and iterators now have a scaling option.</p>
+        <p>Changes:</p>
+        <ul>
+          <li>Added Locations tab to look for position in the current seed</li>
+          <li>Added filter for Biome Samples to check biome proportions</li>
+          <li>Added outline display for the area of selected conditions</li>
+          <li>Added "from-visible" to conditions editor</li>
+          <li>Added headless mode to search seeds without a GUI using --nogui</li>
+          <li>Moved scaling of Biome filters to a filter option</li>
+          <li>Moved step size of Iterators to a filter option</li>
+          <li>Moved Nether and End biome filters to the Biome category</li>
+          <li>Enabled Voronoi biome filters (use only when necessary)</li>
+          <li>Removed Triggers tab, since the Locations tab includes its functionality</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+
+  <launchable type="desktop-id">com.github.cubitect.cubiomes-viewer.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/Cubitect/cubiomes-viewer/4.0.1/etc/screenshot_seeds-fs8.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/Cubitect/cubiomes-viewer/4.0.1/etc/screenshot_locations-fs8.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/Cubitect/cubiomes-viewer/4.0.1/etc/screenshot_structures-fs8.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/Cubitect/cubiomes-viewer/4.0.1/etc/screenshot_system-fs8.png</image>
+    </screenshot>
+  </screenshots>
+
+  <recommends>
+    <display_length side="shortest">900</display_length>
+    <display_length side="longest">1600</display_length>
+  </recommends>
+
+  <url type="homepage">https://github.com/cubitect/cubiomes-viewer</url>
+  <url type="bugtracker">https://github.com/cubitect/cubiomes-viewer/issues</url>
+
+  <content_rating type="oars-1.0"/>
+
+</component>

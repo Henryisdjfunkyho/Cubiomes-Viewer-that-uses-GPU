@@ -1,0 +1,12 @@
+cubiomes-viewer.pro.user
+build
+build*/
+*.session
+*.checkpoint*
+*.log
+*.exe
+*.dll
+*.o
+*.obj
+src/libwinsane/*.o
+**/.directory
